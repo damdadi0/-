@@ -1,0 +1,299 @@
+@charset 'utf-8';
+@import url(./my_reset.css);
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.wm {
+  width: calc(100% - 140px);
+  max-width: 1920px;
+  margin: auto;
+}
+header {
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+header .top_right {
+  /* border: 1px solid blue; */
+
+  display: flex;
+  justify-content: right;
+}
+
+header .top_menu,
+header .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .top_menu li {
+  /* border: 1px solid green; */
+  margin: 0 0.5rem;
+  font-size: 14px;
+  color: #749dd3;
+}
+
+/* header .icons > a {
+  border: 1px solid #749dd3;
+  width: 27px;
+  height: 27px;
+  border-radius: 15px;
+  margin: 0 5px;
+} */
+header .icons img {
+  width: 27px;
+  height: 27px;
+  border: 1px solid #749dd3;
+  border-radius: 15px;
+  margin: 0 5px;
+}
+
+nav {
+  /* border: 1px solid blueviolet; */
+  display: flex;
+}
+
+.logo {
+  margin: auto 0px;
+}
+
+nav {
+  justify-content: space-between;
+}
+.gnb {
+  display: flex;
+  text-align: center;
+  height: 85px;
+}
+.gnb li {
+  /* border: 1px solid blue; */
+  width: 100%;
+  /* align-items: center; */
+  position: relative;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  background-color: white;
+  z-index: 10;
+}
+.gnb a {
+  display: block;
+  padding: 0.5rem;
+}
+
+.gnb li a {
+  display: block;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  position: relative;
+}
+.gnb li > a::before {
+  content: "";
+  background-color: #749dd3;
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.gnb li:hover > a {
+  color: #749dd3;
+}
+.gnb li:hover .sub {
+  height: auto;
+}
+
+.sub {
+  font-size: 16px;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  /* background-color: #749dd3; */
+  overflow: hidden;
+  transition: 0.3s;
+}
+.sub a {
+  padding: 0.25;
+}
+.sub a:hover {
+  background-color: #749dd3;
+  color: white !important;
+}
+
+.sec1 {
+  border: 1px solid green;
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+.sec1 img {
+  height: 800px;
+}
+.sec1 .title1 {
+  position: absolute;
+  color: #ffeada;
+  padding: 160px 157px;
+}
+.sec1 .title1 > h2 {
+  font-weight: bold;
+  font-size: 80px;
+}
+.sec1 .title1 > p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.sec1 button {
+  position: absolute;
+  width: 25px;
+  height: 66px;
+  top: 50%;
+  transform: translateX(70px);
+  color: transparent;
+}
+.sec1 button > .prev {
+  left: 25%;
+}
+.sec1 button > .next {
+  right: 25%;
+}
+
+.sec2 {
+  border: 1px solid blueviolet;
+  margin-top: 150px;
+  position: relative;
+}
+.sec2 .top {
+}
+
+.sec2 .top img {
+  width: 770px;
+  height: 370px;
+  object-fit: cover;
+}
+.sec2 .bottom img {
+  left: 1150px;
+  width: 540 px;
+  height: 370px;
+  object-fit: cover;
+}
+
+.sec2 .text1 {
+  position: absolute;
+  left: 970px;
+  bottom: 40px;
+}
+
+.sec2 .text2 {
+  position: absolute;
+  left: 430px;
+  bottom: 40px;
+}
+
+.sec2 .text1 > h2 {
+  margin-bottom: 110px;
+}
+.sec2 .text2 > h2 {
+  margin-bottom: 110px;
+}
+
+.sec2 .text1 > h2,
+.sec2 .text2 > h2 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #2c2c2c;
+}
+
+.sec2 .text1 > p,
+.sec2 .text2 > p {
+  font-size: 16px;
+  color: #2c2c2c;
+}
+
+.sec2 .top {
+  padding: 50px 0 100px 0s;
+  position: relative;
+}
+.sec2 .top > .img {
+  width: 770px;
+  height: 370px;
+}
+
+.sec2 .bottom > h2 {
+  padding: 0 540px 0 0;
+  font-size: 2.5rem;
+  padding-bottom: 120px;
+  padding: 50px 0 100px 0s;
+}
+.sec2 .bottom > p {
+  font-size: 22px;
+}
+
+.sec3 {
+  margin-top: 250px;
+  margin-bottom: 140px;
+  border: 1px solid seagreen;
+  height: 380px;
+  background-image: url(/img/배경.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.sec3 .info_list1::before {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  background-color: #749dd3;
+}
+
+.sec3 .inner {
+  padding: 50px 0 50px 0;
+  position: relative;
+}
+.sec3 .title {
+  position: absolute;
+  left: 250px;
+  top: 80px;
+  color: white;
+}
+.sec3 .title > h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.sec3 .title > p {
+  font-size: 20px;
+}
+
+.sec3 .info {
+  display: flex;
+  color: white;
+}
+
+.sec5 {
+  border: 1px solid red;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.sec5 > div {
+  position: absolute;
+  display: flex;
+}
+
+.sec5 > h2 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #2c2c2c;
+}
+
+.sec5 > .imgs {
+  width: 320px;
+  height: 320px;
+}
